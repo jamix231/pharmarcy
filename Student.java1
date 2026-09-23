@@ -1,0 +1,70 @@
+package pharmar;
+import java.util.Scanner;
+public class Student {
+
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	
+	System.out.println("Enter your name");
+	String name = scanner.nextLine();
+	
+	System.out.println("Enter your residence");
+	String residence = scanner.nextLine();
+	
+	System.out.println("Enter your age");
+	int age = scanner.nextInt();
+	
+	System.out.println("Enter your contact");
+	double contact = scanner.nextDouble();
+	
+	//end of bio data
+	//checking the symptoms
+	 
+	int temperature =30;
+	if( temperature<=36){
+		System.out.println("sick");
+	}else{
+		System.out.println("fine");
+	}
+	int temp =45;
+	if(temp>=30){
+		System.out.println("Dead");
+	}else if(temp>=33){
+		System.out.println("Alive");
+	}else{
+		System.out.println("in comma");
+	}
+	
+	// Tablets to be taken by the patient
+	int doze = 20;
+	System.out.println(doze);
+	
+	
+	for (int tablets=4;tablets<=20;tablets++ ){
+		System.out.println(tablets);	
+	}
+	 //days for the doze to be considered done
+	
+	int days = 1;
+	while(days<=5){
+		System.out.println(days);
+		days++;
+	}
+	int day =5;
+	
+	String result = day<=20? "correct":"wrong";
+	System.out.println(result);
+	
+	//payment to be made
+	
+	int payment = 19990;
+	do{
+		System.out.println(payment);
+		payment++;
+	}while(payment<=20000);
+	
+	
+	//End of the project
+	}
+
+}
